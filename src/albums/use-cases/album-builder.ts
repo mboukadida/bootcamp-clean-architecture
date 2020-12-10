@@ -1,7 +1,7 @@
 import { Album } from '../entities/album';
 
 export class AlbumBuilder {
-    protected id : string;
+    protected id : number;
     protected name: string;
     protected width: number;
     protected height: number;
@@ -40,7 +40,7 @@ export class AlbumBuilder {
     }
 
     
-    public withId(value: string) : AlbumBuilder {
+    public withId(value: number) : AlbumBuilder {
         this.id = value;
         return this;
     }

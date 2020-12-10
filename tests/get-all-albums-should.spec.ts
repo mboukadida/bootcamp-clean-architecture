@@ -9,7 +9,7 @@ describe('get all albums should', ()=> {
     
     beforeEach(() => {
         backToBlack = new AlbumBuilderStub()
-            .withId('1')
+            .withId(1)
             .withName('Back to black')
             .build()
     })
@@ -39,7 +39,7 @@ describe('get all albums should', ()=> {
     it('return a list of two album when source have two album', () => {
         // Given
         var renaissance = new AlbumBuilderStub()
-            .withId('2')
+            .withId(2)
             .withName('renaissance')
             .build()
         var GetAllAlbums: GetAllAlbums = createGetAllAlbums([backToBlack, renaissance]);

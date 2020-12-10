@@ -8,7 +8,7 @@ export class GetAlbumDetails {
     constructor(private albumsRepository: IAlbumRepository) {
     }
 
-    handle(id: string): Observable<Album> {
+    handle(id: number): Observable<Album> {
         return this.albumsRepository.get(id);
     }
 }

@@ -17,6 +17,6 @@ export class AlbumDetailsComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.album$ = this.getAlbumDetails.handle(this.route.snapshot.paramMap.get('id'));
+    this.album$ = this.getAlbumDetails.handle(+this.route.snapshot.paramMap.get('id'));
   }
 }
