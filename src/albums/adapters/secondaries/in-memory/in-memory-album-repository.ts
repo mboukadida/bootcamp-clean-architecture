@@ -14,7 +14,7 @@ export class InMemoryAlbumRepository implements IAlbumRepository {
         return of(this.albums);
     }
 
-    get(id: string): Observable<Album> {
+    get(id: number): Observable<Album> {
         return of(this.albums.filter(album => album.id === id)[0])
     }
 }

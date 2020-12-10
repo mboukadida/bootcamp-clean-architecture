@@ -1,9 +1,5 @@
-
-
 export class Album {
-    
-   
-    constructor(private _id: string,
+    constructor(private _id: number,
         private _name: string,
         private _width: number,
         private _height: number,
@@ -12,7 +8,7 @@ export class Album {
         private _duration: number) {
     }
 
-    public get id(): string {
+    public get id(): number {
         return this._id;
     }
 
