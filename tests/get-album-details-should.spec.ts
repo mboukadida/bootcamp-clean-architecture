@@ -1,7 +1,7 @@
 import { InMemoryAlbumRepository } from 'src/albums/adapters/secondaries/in-memory/in-memory-album-repository';
 
 import { AlbumBuilderStub } from './stubs/album-builder-stub';
-import { GetAlbumDetails } from '../src/albums/use-cases/geta-album-details';
+import { GetAlbumDetails } from '../src/albums/use-cases/get-album-details';
 
 describe('Get album details should', () => {
     it('verify returned album details from source', () => {
